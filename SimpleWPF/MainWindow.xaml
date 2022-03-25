@@ -1,0 +1,28 @@
+﻿<Window x:Class="SimpleWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleWPF"
+        mc:Ignorable="d"
+        Title="Simple Application" Height="300" Width="400">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <LinearGradientBrush.RelativeTransform>
+                <TransformGroup>
+                    <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                    <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                    <RotateTransform Angle="220.01099999999997" CenterY="0.5" CenterX="0.5"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </LinearGradientBrush.RelativeTransform>
+            <GradientStop Color="#FF4CB7A6" Offset="0"/>
+            <GradientStop Color="#FFCAFFFE" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="TextLabel" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Old English Text MT" FontSize="36" Foreground="#FF1326F9"/>
+        <Button x:Name="DisplayTextButton" Content="Display Text" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="160,241,0,0" Click="DisplayText"/>
+
+    </Grid>
+</Window>
